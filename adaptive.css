@@ -1,0 +1,160 @@
+* {
+    margin:0;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+@media screen and (max-width:768px){
+   /*Хедер*/
+    .header-1 {
+        display:none;
+    }
+    .header-2 {
+        display:none;
+    }
+    .header-mobile {
+        display: flex;
+        height: 65px;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF;
+        width: 100%;
+        z-index: 100;
+    }
+    .header-with-success-message{
+        top: 65px;
+    }
+    .header-with-fail-message {
+        top: 65px;
+    }
+    /* Главное */
+    .general-info-container {
+        flex-direction: column;
+    }
+    .about-clinic {
+        order: 1;
+        margin-left: 15px;
+    }
+    .clinic-reception-image {
+        order: 0;
+        background-size: cover;
+    }
+    .empty-container {
+        display: none;
+    }
+    /* Чекап */
+    .checkup-container {
+        width: 90%;
+    }
+    .checkup-container-back {
+        width: 50%;
+        background-size: cover;
+    }
+    .checkup-slider-image {
+        display: none;
+    }
+    .checkup-description-container {
+        width: 100%;
+        border-radius: 5px;
+    }
+    .checkup-text {
+        font-size: x-large;
+    }
+    /*Футер */
+    .footer-container {
+        display:none;
+    }
+    .logo-footer-mobile{
+        flex:1;
+        display: flex;
+        align-items: center;
+    }
+    .logo-footer-mobile img{
+        height:27px;
+        width:91px;
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-mobile {
+        display: flex;
+    }
+    .socials-footer-mobile {
+        display:flex;
+        margin-left: 30%;
+    }
+    .socials-footer-mobile img{
+        margin-left: 5px;
+    }
+    .registration-form {
+        display: flex;
+        min-width: 300px !important;
+        min-height: 100px;
+        width: 100px;
+    }
+    .registration-text {
+        font-size: 14px !important;
+    }
+    .registration-form h1 {
+        padding-top: 10%;
+   
+    }
+    .registration-form p {
+        padding-top: 1%;
+        text-align: center;
+        
+    }
+    #turn-off-registration-button {
+        display: fixed;
+        top:0;
+        right: 5px !important;
+    }
+    #phone {
+        width: 250px !important;
+        height: 40px !important; 
+    }
+    #name {
+        width: 250px !important;
+        height: 40px !important; 
+    }
+}
+@media screen and (min-width: 769px) {
+    .general-info-container {
+        max-height: 440px;
+    }
+    .clinic-reception-image {
+        background-size: cover;
+    }
+    .doctor-working-table {
+        background-size: cover;
+    }
+
+}
+@media screen and (max-width: 1540px) {
+    .header-container {
+        width: 90%;
+    }
+    .footer-container {
+        width:90%;
+    }
+    .nav-footer {
+        width: 60%;
+    }
+    .socials-footer {
+        width: 15%;
+    }
+}
+@media screen and (max-width:1200px) {
+    .checkup-buttons {
+        padding-left: 10px;
+    }
+    .checkup-text {
+        font-size: small;
+    }
+    .checkup-container {
+        width: 80%;
+    }
+    .checkup-container-back {
+        width: 50%;
+    }
+}

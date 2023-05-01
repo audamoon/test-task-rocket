@@ -1,0 +1,214 @@
+/* Главный контент */
+body a {
+    transition: 0.15s;
+}
+body a:hover {
+    font-size: 17px;
+   text-shadow: 0 0 10px rgb(0, 255, 140) ;
+   cursor: pointer;
+}
+.upper-section {
+    display: flex;
+    flex-direction: column;
+}
+/* О клинике */
+.general-info-container {
+    display: flex;
+    width: 100%;
+    height: 532px;
+    margin-bottom: 100px;
+}
+.empty-container {
+    display: flex;
+    flex:2;
+    background-color:#F8FBFA;
+}
+.about-clinic {
+    display: flex;
+    flex:3;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-color:#F8FBFA;
+    color: #364844;
+
+}
+.clinic-info-h1 {
+    display: flex;
+    text-align: left;
+    font-weight: 700;
+    max-width: 55%;
+    margin-bottom: 14px;
+    line-height: 47px;
+}
+.clinic-info-p {
+    display: flex;
+    text-align: left;
+    font-weight: 400;
+    max-width: 70%;
+    line-height: 24px;
+}
+.clinic-reception-image {
+    display: flex;
+    flex:5;
+    background: url(images/hospitar-reception.png);
+    background-size: 100%;
+    
+}
+/* Чек-ап слайдер */
+.checkup-1 {
+    display: flex;
+    height: 440px;
+    width: 100%;
+    justify-content: center;
+}
+.checkup-container {
+    display: flex;
+    width: 60%;
+}
+.checkup-description-container {
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+    width: 40%;
+    background-color: #E2F0EF;
+    justify-content: center;
+    border-radius: 5px 0px 0px 5px;
+}
+.checkup-text {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    height: 341px;
+}
+.dot {
+    color: #1FA181;
+    margin-right: 9px;
+}
+.checkup-text h3 {
+    color:#364844;
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 10%;
+}
+.checkup-text-description {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 63px;
+    visibility: hidden;
+    
+}
+.checkup-text-description h1 {
+    color: #364844;
+}
+.checkup-text-description h2 {
+    color: #364844;
+}
+.checkup-without-sale-price {
+    color: #868686;
+}
+.checkup-text-description p {
+    color: #364844;
+    line-height: 28px;
+}
+.checkup-buttons {
+    display: flex;
+    flex-direction: row;
+    padding-left: 63px;
+}
+.about-checkup-button {
+    border: 1px solid #0DBC91;
+    border-radius: 50px;
+    width: 196px;
+    height: 43px;
+    background: #E2F0EF;
+    transition: 0.5s;
+    margin-left: 14px;
+}
+.about-checkup-button:hover {
+    cursor: pointer;
+    background-color: #f8a745;
+    color: white;
+    border: #ff9c24;
+}
+.checkup-container-front {
+    position: absolute;
+    z-index: 1;
+    border-bottom: 440px solid #E2F0EF;
+    border-right: 120px solid transparent;
+}
+.checkup-container-back {
+    width: 36%;
+    position: absolute;
+    z-index: 0;
+}
+.doctor-working-table {
+    background: url(images/doctor-working-table.png);
+    width: 100%;
+    height: 440px;
+    border-radius: 0px 5px 5px 0px;
+}
+.two-prices {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+}
+.checkup-sale-price {
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 20px;
+}
+#id-sale {
+    text-decoration: line-through;
+    font-weight: 400;
+    margin-right: 20px;
+    color: #868686;
+}
+/* Стрелки */
+.arrows-container {
+    margin-top: 39px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.arrow-left-button {
+    border: none;
+    background-color: transparent;
+    color: #ccc;
+    font-size: 32px;
+    transition: 0.5s;
+    vertical-align: middle;
+    padding-bottom: 10%;
+}
+.arrow-left-button:hover{
+    color: black;
+    cursor: pointer;
+}
+.arrow-left-button:active {
+    color: black;
+}
+.counter {
+    display: flex;
+    margin-left: 36px;
+    margin-right: 36px;
+}
+.arrow-right-button {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #ccc;
+    font-size: 32px;
+    transition: 0.5s;
+    vertical-align: middle;
+    padding-bottom: 10%;
+}
+.arrow-right-button:hover{
+    color: black;
+    cursor: pointer;
+}
+.arrow-right-button:active {
+    color: black;
+}

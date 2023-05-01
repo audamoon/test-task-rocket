@@ -1,0 +1,111 @@
+/* Форма отправки */
+#registration-form-background {
+    background-color: hsla(0, 0%, 0%, 0.5);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+}
+.registration-form {
+    display: flex;
+    min-width: 600px;
+    min-height: 400px;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    position:fixed;
+    z-index: 101;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-color:#086850;
+    border-radius: 50px;
+}
+.registration-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registration-text {
+    color: white;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+#btnSubmit {
+    height: 60px;
+    width: 250px;
+    border-radius: 50px;
+    border:solid 1px #0DBC91;
+    background-color:white;  
+    transition: background-color 0.5s, box-shadow 0.5s, color 0.5s; 
+    font-size: 24px;
+    margin-top: 5%;
+}
+#btnSubmit:hover {
+    box-shadow: 0 0 10px #2ad0a6;
+    background-color: #0DBC91;
+    color: white;
+}
+#phone {
+    height: 48px;
+    width: 300px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    border:none;
+    font-size: 24px;
+    transition: box-shadow 0.5s;
+    text-align: center;
+}
+#phone::placeholder {
+    text-align: center;
+    font-size: 24px;
+    vertical-align: middle;
+}
+#phone:focus {
+    outline: none !important;
+    border: none;
+    box-shadow: 0 0 10px #2ad0a6;
+}
+#name {
+    height: 48px;
+    width: 300px;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    border:none;
+    font-size: 24px;
+    text-align: center;
+    transition: box-shadow 0.5s;
+}
+#name::placeholder {
+    text-align: center;
+    font-size: 24px;
+    vertical-align: middle;
+}
+#name:focus {
+    outline: none !important;
+    border: none;
+    box-shadow: 0 0 10px #2ad0a6;
+}
+#turn-off-registration-button {
+    position: fixed;
+    top:0;
+    right:20px;
+    color: white;
+    font-size: 56px;
+    border: none;
+    background-color: transparent;
+    transition: color 0.25s;
+}
+#turn-off-registration-button:hover {
+    color: #ff5f5f;
+    cursor: pointer;
+
+}
+#turn-off-registration-button:active {
+    color: red;
+}
